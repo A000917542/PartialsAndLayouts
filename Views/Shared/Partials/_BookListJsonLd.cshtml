@@ -1,0 +1,14 @@
+@model IEnumerable<Book>
+
+<script type="json-ld" >
+[
+    
+    @foreach (var book in Model)
+    {
+            @* <partial name="Partials/_BookJsonLd" model="book" />, *@
+            Html.RenderPartial("Partials/_BookJsonLd", book);
+    }
+        
+    
+]
+</script>

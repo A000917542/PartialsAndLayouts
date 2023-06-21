@@ -1,0 +1,19 @@
+﻿@model IEnumerable<TestModel>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<table>
+    <thead>
+        <th>ColA</th>
+        <th>ColB</th>
+        <th>ColC</th>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+            <partial name="Partials/_RowPartial" model="@item" />
+        }
+    </tbody>
+</table>

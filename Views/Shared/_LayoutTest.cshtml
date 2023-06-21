@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/WebMVC.styles.css" asp-append-version="true" />
+    </head>
+    <body>
+        <partial name="Partials/_Navigation" />
+        <aside>
+            <partial name="Partials/_MailSignup" />
+        </aside>
+        <main class="main-content">
+            @RenderBody()
+        </main>
+    </body>
+</html>
